@@ -1,0 +1,298 @@
+:root {
+    --primary-color-100: hsl(171, 66%, 44%);
+    --primary-color-200: hsl(233, 100%, 69%);
+
+    --neutral-color-100: hsl(210, 10%, 33%);
+    --neutral-color-200: hsl(201, 11%, 66%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.125rem;
+    min-height: 100vh;
+}
+
+.container {
+    width: 85%;
+    max-width: 90rem;
+    margin-inline: auto;
+}
+
+header {
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 3rem 0;
+}
+
+.header__image {
+    display: grid;
+    place-items: center;
+    margin: 3rem 0;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--neutral-color-100);
+    font-weight: 600;
+    text-align: center;
+}
+
+p {
+    color: var(--neutral-color-200);
+    font-size: 0.985rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.pb-20 {
+    padding-bottom: 1.2rem;
+}
+
+.pb-30 {
+    padding-bottom: 1rem;
+}
+
+.pb-40 {
+    padding-bottom: 2.5rem;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+button {
+    border: none;
+    border-radius: 3rem;
+    color: white;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.875rem 0;
+    cursor: pointer;
+}
+
+.ios-button {
+    background-color: var(--primary-color-100);
+    box-shadow: 0rem 0.625rem 1.25rem rgba(137, 229, 199, 0.503305), inset 0rem -0.1875rem 0rem rgba(0, 0, 0, 0.151333);
+}
+
+.mac-button {
+    background-color: var(--primary-color-200);
+    box-shadow: 0rem 0.625rem 1.25rem rgba(120, 162, 238, 0.503), inset 0rem -0.1875rem 0rem rgba(0, 0, 0, 0.151333);
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+section {
+    padding-block: 3rem;
+}
+
+.device__image {
+    margin-block: 3rem;
+}
+
+
+
+.access__about {
+    margin-bottom: 3rem;
+}
+
+.supercharge__services {
+    margin-top: 3rem;
+}
+
+
+.supercharge__icon {
+    display: grid;
+    place-items: center;
+    padding-block: 2rem;
+}
+
+.sponsor__logo {
+    display: grid;
+    place-items: center;
+    padding-block: 2rem;
+}
+
+.clipboard__availability {
+    margin-bottom: 8rem;
+}
+
+footer {
+    background-color: hsl(220, 18%, 97%);
+    padding-block: 3rem;
+}
+
+.footer__logo {
+    display: grid;
+    place-items: center;
+    margin-bottom: 2rem;
+}
+
+.flogo {
+    width: 3.5rem;
+}
+
+.summary {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+li a {
+    color: var(--neutral-color-100);
+    text-decoration: none;
+}
+
+li a:hover {
+    color: var(--primary-color-100);
+}
+
+.social__icons {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 62.5rem) {
+    header {
+        background-image: url(./images/bg-header-desktop.png);
+    }
+    
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    .body {
+        max-width: 36rem;
+        margin-inline: auto;
+    }
+
+    .btn {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    button {
+        padding: 0.935rem 2rem;
+    }
+
+    .body-medium {
+        max-width: 39rem;
+        margin-inline: auto;
+    }
+
+    .services__row {
+        display: flex;
+    }
+
+    .com {
+        margin-left: -7rem;
+    }
+
+    aside {
+        margin-top: 6rem;
+        margin-left: -2rem;
+    }
+
+    .col {
+        margin-bottom: 2.9rem;
+    }
+
+    .col h3,
+    .col p {
+        text-align: left;
+    }
+
+    .pb-30 {
+        padding-bottom: 0.5rem;
+    }
+
+    .body-small {
+        max-width: 21rem;
+    }
+
+    .device {
+        display: grid;
+        place-items: center;
+    }
+
+    .supercharge__services {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .blacklist {
+        margin-top: 1rem;
+    }
+
+    .sponsors {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer {
+        padding-block: 3rem;
+    }
+
+    .footer__row {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__logo {
+        width: 16rem;
+        margin-bottom: 0;
+    }
+
+    .summary {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        width: 31rem;
+    }
+
+    .social__icons {
+        margin-left: auto;
+        margin-top: 0;
+    }
+
+    li {
+        margin-top: 0;
+    }
+
+    .enquiries,
+    .policy {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
